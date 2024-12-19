@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo's Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="name"><a class="name-link" href="index.html"><span>Leo</span>nardo</a></h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="contact-me-btn">Contact Me!</button>
+    </header>
+    <main>
+        <div id="about" class="hero">
+            <div class="content">
+                <h2>Hi</h2>
+                <h1>My name is <span>Leonardo</span></h1>
+                <h1>a Full Stack Developer</h1>
+                <h1>and Computer Engineer</h1>
+                <p>I'm a Computer Engineering student at Insper, passionate about coding. Follow my journey as I explore
+                    programming and tackle ambitious projects!</p>
+                <div class="btn-container">
+                    <button class="hire-me-btn">Hire me</button>
+                    <button class="more-about-me-btn">Read more about me</button>
+                </div>
+            </div>
+            <img src="img/me.jpg" alt="Leonardo Teixeira" class="profile-pic">
+        </div>
+        <div id="projects" class="experiences-container">
+            <h1 class="exp-title">My <span>Experiences</span></h1>
+            <div class="experiences">
+                <div class="experience-item">
+                    <h2>Trainee, Insper Jr.<br><i>São Paulo, Brazil</i></h2>
+                    <p><strong>Mar 2024 — Jun 2024</strong></p>
+                    <ul>
+                        <li>Solved a consulting case inspired by real projects from the junior company.</li>
+                        <li>Actively participated in the development of a <span>web solution</span>, applying practical knowledge in
+                            programming and design.</li>
+                        <li>Performed <span>data clustering</span> for audience segmentation, optimizing the company's marketing
+                            strategy.</li>
+                        <li>Developed a <span>Power BI</span> dashboard integrating financial and operational data to facilitate
+                            decision-making.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h2>Consultant, Insper Jr.<br><i>São Paulo, Brazil</i></h2>
+                    <p><strong>Jun 2024 — Present</strong></p>
+                    <ul>
+                        <li>After going through 200 hours of training, am currently serving as a consultant, developing impactful real-client projects.</li>
+                        <li>Led a project for <span>Red Bull</span> using web scraping to conduct a geographical study of sales points, delivering valuable insights.</li>
+                        <li>Developed an <span>internal website</span> for Insper Jr. to streamline the selection process and manage current members efficiently.</li>
+                        <li>Maintaining regular contact with <span>stakeholders</span>, actively participating in the Institutional and Commercial nuclei, and <span>prospecting</span> new clients.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h2>On-Progress Course</h2>
+                    <p><strong>Full Stack Development, Codecademy</strong></p>
+                    <ul>
+                        <li>Currently enhancing <span>front-end</span> and <span>back-end</span> skills through a comprehensive course on <span>full
+                            stack</span> development.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <h1 class="contact-title exp-title">Contact <span>Me</span></h1>
+            <div class="form-container">
+                <form class="contact-form" action="contact.php" method="POST">
+                    <input placeholder="Name" type="text" name="name" id="name" required>
+                    <input placeholder="Email" type="email" name="email" id="email" required>
+                    <textarea placeholder="Message" name="message" id="message" required cols="40" rows="8"></textarea>
+                    <p class="char-count">Character Counter: </p>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/leocteixeira/"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/leonardoct3"><img src="img/github.png" alt="GitHub"></a>
+                <a href='https://www.instagram.com/leo.teeixeira/'><img src="img/instagram.png" alt="Instagram"></a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p>© 2024 Leonardo Teixeira. All rights reserved.</p>
+
+    </footer>
+</body>
+
+</html>
