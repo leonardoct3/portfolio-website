@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 
 ## 🖥️ Live Demo
 
-You can view the live version of my portfolio [here](#add-link-to-your-live-site).
+You can view the live version of my portfolio [here](https://leonardoct3.github.io/portfolio-website/).
 
 ---
 
