@@ -73,6 +73,8 @@ span {
     display: flex;
     align-items: center;
     margin-top: 5rem;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .profile-pic {
@@ -80,6 +82,7 @@ span {
     height: auto;
     margin: 0 auto;
     border-radius: 80%;
+    min-width: 300px;
 }
 
 .content {
@@ -137,6 +140,11 @@ span {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+.btn-container {
+    display: flex;
+    margin-top: 1rem;
+}
+
 .experiences-container {
     display: flex;
     flex-direction: column;
@@ -171,6 +179,7 @@ span {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    min-width: 400px;
 }
 
 .contact {
@@ -279,4 +288,54 @@ footer {
 
 .error {
     display: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1300px) {
+    .content {
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .profile-pic {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        margin-top: 0;
+    }
+    .content {
+        width: 80%;
+        margin-left: 0;
+    }
+    .experiences {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-me-btn {
+        display: none;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .experiences-container {
+        padding: 1rem;
+    }
+    .experience-item {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
 }
